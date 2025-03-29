@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Eid | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="main-sentence">
+        This is a message from my heart to you: 
+    </h1>
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <h4 id="made-by-sentence">Made with love by Abdelrahman Aref</h4>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        function confetti_generator(){
+            confetti({
+    particleCount: 10,
+    spread: 100,
+                colors:['#00aeff', '#003af7', '#5890fa', '#ffff'],
+                origin: {
+            x: 0.5, // Horizontal position (0 = left, 1 = right)
+            y: 0  // Vertical position (0 = top, 1 = bottom)
+        }
+
+                
+});
+        }
+        window.onload = function(){
+            setInterval(confetti_generator, 100);
+        }
+    </script>
+    <script src="file.js"></script>
+</body>
+</html>
